@@ -1,0 +1,111 @@
+:root {
+  --black: #20202b;
+  --orange: #eeae61;
+  --fmBlack: #282833;
+  --fmWhite: #ffffff;
+  --underFm: #22222b;
+  --fmcolor: #a3acbe;
+  --hr: #43434d;
+  --downside: #22222b;
+}
+body {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.main {
+  box-shadow: 0px 16px 70px -8px rgba(0, 0, 0, 1);
+  border-radius: 25px;
+}
+.main-section {
+  height: 450px;
+  width: 325px;
+  border-radius: 25px 25px 0 0;
+  background-color: var(--fmBlack);
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.main-section::-webkit-scrollbar {
+  display: none;
+}
+.fm-heading {
+  display: flex;
+  color: var(--fmWhite);
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 325px;
+  background-color: var(--orange);
+  border-radius: 25px 25px 0 0;
+  font-size: 1rem;
+}
+.fm-list {
+  padding-top: 20px;
+}
+.fm-heading img {
+  height: 21px;
+  width: 16px;
+  padding: 20px;
+}
+.fm-with-hr {
+  padding: 0 20px;
+}
+
+.fm-and-frequnecy {
+  display: flex;
+  justify-content: space-between;
+  color: var(--fmcolor);
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+hr {
+  height: 0px;
+  border: none;
+  border-top: 1px solid var(--hr);
+}
+.fm-hr-pic {
+  padding-top: 10px;
+}
+.fm-detail-pic {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.fm-detail-pic .detail-img {
+  height: 30px;
+  width: 30px;
+}
+
+.fm-detail-pic img {
+  height: 150px;
+  width: 150px;
+}
+
+.status-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 325px;
+  background-color: white;
+  border-radius: 0 0 25px 25px;
+  background-color: var(--downside);
+  visibility: hidden;
+}
+
+.status-section .current {
+  color: var(--orange);
+  font-size: 13px;
+}
+.status-section .current-fm {
+  color: var(--fmcolor);
+  font-size: 1.5rem;
+}
